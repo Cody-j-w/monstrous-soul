@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand test">Monstrous Soul</a>
+                <div class="collapse navbar-collapse" id="site-nav">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./mutations.html">Mutations</a>
+                        <a class="nav-link active" href="./spellcasting.html">Spellcasting</a>
+                        <a class="nav-link" href="./equipment.html">Equipment</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container text-center">
+            <h1 class="test mt-4">~~ Spellcasting ~~</h1>
+            <div>
+                <p>Magic takes many forms, and even those who wield it don't know its full extent, or even what it truly is - because truly, it's a little bit different for everyone. Despite it's differences, though, there are a few rules that all spellcasters are bound to.</p>
+                <br>
+                <p>All Spellcasters have a spellcasting ability - usually this is determined by the source of their magic, but those spellcasters who try to harness wild magic may be free to make the choice on their own. This ability is what you roll against when making magic checks, either to attack or defend.</p>
+                <p>When attacking, a spell has two components that determine the capabilities of the spell - the source trait, and the focus trait. The source of a spell will determine special effects and any unique damage types the spell may have - and possibility what limitations the caster may have - while the focus determines what form the spell takes: whether a single-target strike, a blast across a wide area, or something more unique like a retaliatory strike or an aura of thorns.</p>
+                <p>When defending against a magical effect, roll a magic check - if successful and you possess spellcasting abilities yourself, you may spend a number of spell points equal to the level of the attacker to negate the effect; everyone, spellcaster or not, also has the option of expending armor to block the damage of a spell on a successful magic check, though avoiding any additional effects will require an additional defense roll.</p>
+
+                <button class="test mx-3 origin-button spell-button" onclick="populateSpellList(spells)">Spells</button>
+                <button class="test mx-3 origin-button spell-button" onclick="populateSourceList(sources)">Sources</button>
+            <div id="spells">
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand test">Monstrous Soul</a>
+                <div class="collapse navbar-collapse" id="site-nav">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="./mutations.html">Mutations</a>
+                        <a class="nav-link" href="./spellcasting.html">Spellcasting</a>
+                        <a class="nav-link" href="./equipment.html">Equipment</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container text-center">
+            <h1 class="test mt-4">~~ mutations ~~</h1>
+            <div>
+                <p>Equal parts magic items and class features, mutations define what makes you different from other adventurers - they may grant you special abilities not possible otherwise, they may enhance or penalize other abilities, and they might not do anything at all except make you a little bit less human, and that might be all you need.</p>
+                <br>
+                <p>Mutations fit into "slots" - mutating what's already been mutated is a recipe for disaster, and while that might be what you want, those you travel with might prefer that you don't deteriorate into a horrific abomination of flesh and magic, driven by an endless maddening hunger. Or they might be cool with that, ask them first. If you want to play it safe, here are the slots:</p>
+                <ul class="list-group list-group-horizontal justify-content-center">
+                    <li class="list-group-item mx-2">Head</li>
+                    <li class="list-group-item mx-2">Face</li>
+                    <li class="list-group-item mx-2">Body</li>
+                    <li class="list-group-item mx-2">Back</li>
+                    <li class="list-group-item mx-2">Arms</li>
+                    <li class="list-group-item mx-2">Legs</li>
+                    <li class="list-group-item mx-2">Magic</li>
+                </ul>
+                <br>
+                <p>Additionally, mutations have different origins - while mutations within a single origin tend to work together well, forming a sort of approximation of a character class, there is no restriction on mixing and matching.</p>
+                <table class="mx-auto table table-border table-dark w-50">
+                    <tbody>
+                        <tr class="text-start">
+                            <td class="p-3">Leviathan</td>
+                            <td class="p-3">Become a sea monster, all teeth and tentacles and feral will to survive</td>
+                        </tr>
+                        <tr class="text-start">
+                            <td class="p-3">Knight</td>
+                            <td class="p-3">Abandon your weakness, abandon your fear, never abandon those you protect</td>
+                        </tr>
+                        <tr class="text-start">
+                            <td class="p-3">Revenant</td>
+                            <td class="p-3">Everything must die, except for death itself - so become death</td>
+                        </tr>
+                        <tr class="text-start">
+                            <td class="p-3">Heretic</td>
+                            <td class="p-3">To be monstrous is to be heretical, so embrace it, run with it, draw power from it</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="my-4">
+                <button class="test origin-button mx-3 leviathan-button" onclick="populateMutationList(mutations, 'Leviathan')">
+                    Leviathan
+                </button>
+                <button class="test origin-button mx-3 knight-button" onclick="populateMutationList(mutations, 'Steel')">
+                    Knight
+                </button>
+                <button class="test origin-button mx-3 revenant-button" onclick="populateMutationList(mutations, 'Revenant')">
+                    Revenant
+                </button>
+                <button class="test origin-button mx-3 heretic-button" onclick="populateMutationList(mutations, 'Heretic')">
+                    Heretic
+                </button>
+            </div>
+            <div id="mutations">
+
+            </div>
+        </div>
+    </main>
+<script>
+</script>
+</body>
+</html>

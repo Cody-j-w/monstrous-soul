@@ -1,89 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.12.5/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.12.5/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.12.5/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand test">Monstrous Soul</a>
+                <div class="collapse navbar-collapse" id="site-nav">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./mutations.html">Mutations</a>
+                        <a class="nav-link" href="./spellcasting.html">Spellcasting</a>
+                        <a class="nav-link" href="./equipment.html">Equipment</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container my-3 py-3">
+            <div class="about text-center">
+                <h1 class="test">About Monstrous Soul</h1>
+                <p class="text-start">Monstrous Soul is a role playing game where players take the role of mutants - individuals afflicted by monstrous magical power - in their journeys across Zaane'zim, the land to which all mutants are banished.
+                    Along their travels, they may acquire new mutations, ancient artifacts, and contend with and creatures just as fierce and eldritch as themselves, and with other mutants who've lost themselves to the influence of the power within.
+                    Perhaps they'll escape Zaane'zim and watchful eye of the inquisition, perhaps they'll discover the source of the power of Zaane'zim and mutations as a whole, perhaps they'll fall - as so many before them - to the allure of more power. Or maybe they'll opt for a different path altogether.
+                </p>
+                <div class="my-3 py-3 row">
+                    <h2 class="test">
+                        How to play
+                    </h2>
+                    <div class="col-lg-8 col-12">
+                        <p class="text-start">In Monstrous Soul, only players roll - they'll roll to defend when attacked, and they'll roll to attack when they, well, attack. Players will need a 20 sided die, as well as a few 6 sided dice for character creation, and something to record character stats and mutations on - a piece of paper and a pencil, a spreadsheet, an ancient stone tablet that mutters foul curses whenever its surface is etched, whatever works for you!</p>
+                        <p class="text-start">A mutant has four attributes that need to be rolled for when they are made - brawn, finesse, will, and arcane - that will be used to make attack, defense, and magic rolls throughout their career, as well as non-combat skill checks. To determine these attributes, roll 4d6 and drop the lowest, and then assign the rolled value to the desired attribute.</p>
+                        <p class="text-start">Once attributes are rolled, players must select their starting mutation from any mutation that does not have a level requirement - there are many ways to replace mutations, including this starting mutation, so do not feel bound by your choices here, just go with what fits your character. Mutations are, effectively, class features in Monstrous Soul, so if it helps, you can think of picking this first mutation as picking your class.</p>
+                        <p class="text-start">Gameplay is, broadly, separated into two categories: in combat, and out of combat. In combat, by default turn order is determined by each character's finesse attribute - monsters that do not have the four attributes have player characters will have a dedicated initiative stat - but there may be mutations that have an effect on a character's initiative, either using a different attribute or modifying how it is rolled in some way.
+                            A player's turn consists of two components - an action and a movement - and each player also has a reaction that may be taken at any point in the round, whenever the criteria for that reaction are met. Most interactions in combat - attacking, casting a spell, using a consumable item - are actions. Moving, unsurprisingly, takes your movement, and most characters can move up to a close range in a round. The reaction is possibly the most broad action type, but also the most limited - by default, all mutants have access to the Opportune Strike and Block reactions, but more may be acquired through various sources - mainly mutations.
+                        </p>
+                    </div>
+                    <div class="offset-lg-1 col-lg-2 col-12 card bg-dark py-4">
+                        <h3 class="test mb-5">Reactions</h3>
+                        <p class="test">Opportune Strike</p>
+                        <p class="my-1">Strike at an open opponent. Actions that leave an opening are:</p>
+                        <p class="my-0">Making an attack with a ranged weapon.</p>
+                        <p class="my-0">Using a consumable item.</p>
+                        <p class="mt-0">Casting an empowered spell.</p>
+                        <p class="test mt-3">Block</p>
+                        <p>Block an incoming attack, damaging your shield but leaving your armor and yourself unharmed.</p>
+                    </div>
+                    <div class="text-start">
+                        <p>The goal of combat is often to simply defeat the opposition before they can defeat you, but additional goals may come into play - stopping a ritual, protecting someone or something, acquiring an artifact before the enemy can, these are all objectives that may come into play in combat beyond simply hitting a monster with your weapon while they do the same to you.</p>
+                        <p>The actual rolls made in combat are simple enough: when a player makes an attack roll, they roll a d20, and if the result is lower than their attribute associated with that attack, it is successful - by default, brawn is the attribute associated with melee attacks, and finesse is the attribute associated with ranged attacks, and arcane is usually the attribute associated with magic rolls, though that is more often determined by a character's magic mutation.</p>
+                        <p>When attacked, a character has a few options right off the bat - make a d20 roll against their finesse to try and dodge the attack, or let their armor do the work, choosing to either lean into the blow with the heaviest portion of their armor - this will absorb the full damage of the attack, but reduce your armor value by 1 until you can perform repairs - or take the strike normally, which will cause the character to take the damage of the attack, reduced by an amount equal to their armor value.</p>
+                        <p>Out of combat, rolls are a little bit more freeform, a little bit less restrictive - a roll may be required to navigate a blocked passageway, but whether it's brawn to shove the blockage out of the way, or finesse to maneuver past it, or even arcane to magic it out of the way is, excepting specific circumstances, effectively purely up to the player.</p>
+                        <p>Even in social encounters, every attribute has its place - will and finesse may seem better than brawn or arcane, but sometimes a show of force is exactly what a situation calls for.</p>
+                    </div>
+                </div>
+                <div class="my-3 py-3">
+                    <h2 class="test">
+                        Advancement and progression
+                    </h2>
+                    <p class="text-start"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>

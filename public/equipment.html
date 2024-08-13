@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand test">Monstrous Soul</a>
+                <div class="collapse navbar-collapse" id="site-nav">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./mutations.html">Mutations</a>
+                        <a class="nav-link" href="./spellcasting.html">Spellcasting</a>
+                        <a class="nav-link active" href="./equipment.html">Equipment</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container text-center">
+            <h1 class="test mt-4">~~ Equipment ~~</h1>
+            <div>
+                <p>Adventurers and mutants alike are bound to encounter trials and hostility in their travels, and when you find yourself in such a situation, you'll be glad to have a good sturdy blade at your side, and some solid armor strapped to your back.</p>
+                <br>
+
+                <button class="test mx-3 origin-button gear-button" onclick="populateGearTable(armor, 'Armor')">Armor</button>
+                <button class="test mx-3 origin-button gear-button" onclick="populateGearTable(weapons, 'Weapons')">Weapons</button>
+            <div id="gear-table">
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

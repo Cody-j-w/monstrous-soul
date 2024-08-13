@@ -1,0 +1,46 @@
+@font-face {
+    font-family: battlemage;
+    src: url(./fonts/Battle_Mage.ttf);
+}
+
+body {
+    background-color: #2b2b2b;
+    color: #cccccc;
+}
+
+.test {
+    font-family: battlemage;
+}
+
+.origin-button {
+    border-color: #212529;
+    background: none;
+    border-style:ridge;
+    border-radius: 5px;
+    padding: 15px;
+    width: 138px;
+}
+
+.leviathan-button {
+    background: linear-gradient(45deg, white, #5654bf);
+}
+
+.knight-button {
+    background: linear-gradient(45deg, white, #757373);
+}
+
+.revenant-button {
+    background: linear-gradient(45deg, white, #DC2B28);
+}
+
+.heretic-button {
+    background: linear-gradient(45deg, white, #f75d25);
+}
+
+.spell-button {
+    background: linear-gradient(45deg, white, #89e9e9);
+}
+
+.gear-button {
+    background: linear-gradient(45deg, white, #989c9c);
+}
