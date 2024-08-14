@@ -191,11 +191,11 @@ function createSourceCard(name, description, special, deliveries) {
     deliveriesHeader.innerHTML = 'Available deliveries';
     card.append(deliveriesHeader);
     const cardDeliveries = document.createElement('ul');
-    cardDeliveries.classList.add('list-group', 'list-group-flush', 'list-group-horizontal', 'justify-content-center', 'mb-3');
+    cardDeliveries.classList.add('list-group', 'list-group-flush', 'list-group-horizontal-md', 'justify-content-center', 'mb-3');
     for (const delivery of deliveries) {
         const entry = document.createElement('li');
         entry.innerHTML = delivery;
-        entry.classList.add('list-group-item', 'mx-2', 'bg-dark', 'text-light');
+        entry.classList.add('list-group-item', 'bg-dark', 'text-light');
         cardDeliveries.append(entry);
     }
     card.append(cardDeliveries);
